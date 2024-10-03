@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Providers First Name</th>
+            <th>Providers Last Name</th>
+            <th>Providers Specialty</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% data.forEach(row => { %>
+            <tr>
+                <td><%= row.first_name %></td>
+                <td><%= row.last_name %></td>
+                <td><%= row.provider_specialty %></td>
+            </tr>
+        <%}); %>
+    </tbody>
+</table>
